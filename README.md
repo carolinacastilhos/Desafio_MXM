@@ -6,8 +6,6 @@
 
 O desafio consistia em criar um exemplo usando integração com APIs e webhook que são acionados por algum evento. Assim, criou-se o ImoveisHelper, uma aplicação web (ainda em construção) que possui o objetivo de pessoas interessadas em imóveis entrar em contato direto com o corretor ou outros profissionais de imobiliárias específicas solicitando a visita de um imóvel de seu interesse. O usuário informa seus dados no formulário da aplicação web, que são enviados para uma planilha google sheets e este evento aciona o webhook na Azure para enviar um email para o corretor através da API do SendGrid com todos os dados do usuário.
 
-<div align="center"><img src="https://github.com/carolinacastilhos/Desafio_MXM/assets/117789578/bb91833f-938b-45e5-a40f-4062475c7484" width="600px" /></div>
-
 ### Tecnologias utilizadas
 
 - Linguagem de programação C#
