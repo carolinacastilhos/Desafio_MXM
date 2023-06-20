@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Lista Imóveis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/styles/Site.css" asp-append-version="true" />
+    <!--utilizando o asp-append-version="true", ele irá limpar o cache do css sempre que renderizar a página, para caso mudemos o estilo -->
+</head>
+<body>
+    <div id="header">
+        @RenderSection("header", required: false)
+    </div>
+    <main>
+        @RenderBody()
+    </main>
+    <div id="footer">
+        @RenderSection("footer", required: false)
+    </div>
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+
+<!--Se quero que este meu layout fique em todas as páginas, posso fazer um arquivo dentro da pasta pages de nome _ViewStart.cshtml e coloco nele arroba {Layout = "Shared/_Layout";}.
+    Desta forma, não precisarei escrever repetidamente o layout em cada uma das páginas.
+    Porém se quero alguma página com layout diferente, posso escrever no início dela qual eu quero que irá sobrescrever nela o layout especificado-->

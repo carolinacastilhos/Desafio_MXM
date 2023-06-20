@@ -1,0 +1,82 @@
+﻿@page
+@model DesafioMXM.Pages.LoginModel
+@{
+    Layout = "Shared/_Layout";
+
+}
+
+@section header {
+    <div id="header">
+        <ul>
+            <li>
+                <button>
+                    <a>Sobre nós</a>
+                </button>
+            </li>
+            <li>
+                <img src="~/imgs/Frame 2.svg" alt="logo ImoveisHelper" />
+            </li>
+            <li>
+                <button>
+                    <a>Home</a>
+                </button>                
+            </li>
+        </ul>
+    </div>
+}
+
+<div class="container p-5">
+    <h1 class="display-3 text-light">Entre em contato e agende sua visita!</h1>
+    <hr />
+    <form  method="post" class="p-10 was-validated">
+
+        <div class="my-3">
+            <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control form-control-lg" id="name" placeholder=" " name="nome" required/>
+                <label for="name" class="form-label col-form-label-lg">Nome Completo</label>
+            </div>
+        </div>
+
+        <div class="my-3">
+            <div class="form-floating mb-3 mt-3">
+                <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder=" " required />
+                <label for="email" class="form-label col-form-label-lg">Email </label>
+            </div>
+        </div>        
+
+        <div class="my-3">
+            <div class="form-floating mb-3 mt-3">
+                <input type="tel" class="form-control form-control-lg" id="tel" name="tel" placeholder=" " required />
+                <label for="tel" class="form-label col-form-label-lg">Telefone</label>
+                <p id="info" class="text-light text-lg-start">
+                    Nós não compartilhamos os seus dados com terceiros.
+                </p>
+            </div>
+        </div>
+
+        <div class="my-3">
+            <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control form-control-lg" id="imovel" name="imovel" placeholder=" " pattern="[0-9]{3}" />
+                <label for="imovel" class="form-label col-form-label-lg">Número de Identificação do Imóvel (código com 3 números)</label>
+            </div>
+        </div>
+
+        <div class="my-3">
+            <div class="form-floating mb-3 mt-3 col-3">
+                <textarea name="mensagem" id="msg" class="form-control col-form-label-lg" style="height:100px" placeholder=" "></textarea>
+                <label for="msg" class="col-form-label-lg">Mensagem</label>
+            </div>
+        </div>        
+
+        <div class="my-3">
+            <button type="submit" class="btn btn-warning btn-lg">Enviar</button>
+        </div>
+        
+    </form>
+</div>
+ 
+
+
+@section footer {
+    <div id="footer">&copy; 2023 Carolina Castilhos da Silva. All rights reserved.</div>
+}

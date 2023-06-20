@@ -1,0 +1,83 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    font-size: 62.5%;
+    --cor-primaria: #0c3b2e;
+    --cor-secundária: #bb8a52;
+    --cor-detalhes1: #6d9773;
+    --cor-detalhes2: #ffba00;
+}
+
+body {
+    background-color: var(--cor-primaria);
+}
+
+#header, #footer {   
+    background-color: whitesmoke;
+    padding: 20px;
+    margin-bottom: 0; 
+    display: flex;
+    justify-content: center;  
+}
+
+#header {
+    border-radius: 0 0 50px 50px;
+    /*background-image: url(https://images.unsplash.com/photo-1615903630112-11df861dfb3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fGhvdXNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    width: 100%;    
+    background-position: center;*/
+}
+
+#header ul {
+   display: flex;
+   gap: 40px;
+   align-items: center;
+}
+
+#header img {
+    width: 55vh;
+}
+
+#header a {
+    text-decoration: none;    
+}
+
+#header button {
+    border: none;
+    padding: 0.6rem 2.4rem;
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: whitesmoke;
+    color: var(--cor-primaria);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+#footer {
+    border-radius: 50px 50px 0 0;
+    font-size: 1.4rem; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: var(--cor-secundária);
+}
+
+/* posso criar um arquivo css específico para alguma das páginas, colocando o nome da página.cshtml.css
+    Automaticamente irá reconhecer que é daquela página e posso colocar estilizações específicas somente para aquela página.
+    Porém, preciso colocar um <link> com a href="~/nomedaaplicação.styles.css" e o asp-append-version true. Este arquivo não existe, mas será gerado sobre demanda.
+*/
+
+
+/*
+font-family: 'Merriweather', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/

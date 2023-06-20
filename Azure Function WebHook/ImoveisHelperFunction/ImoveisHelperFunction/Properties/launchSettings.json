@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "ImoveisHelperFunction": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7141",
+      "launchBrowser": false
+    }
+  }
+}
